@@ -14,4 +14,11 @@ public class HelloController {
     public String ola(){
         return "Olá Mundo!";
      }
+
+    @GetMapping("/paia")
+        public String paia(){
+        return "paia";
+    }
+
+
 }
