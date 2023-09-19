@@ -21,4 +21,9 @@ public class CalendarController {
     public String tomorrow(){
         return "Amanhã será "+LocalDate.now().plusDays(1).getDayOfMonth()+"/"+ LocalDate.now().plusDays(1).getMonthValue()+"/"+LocalDate.now().plusDays(1).getYear();
     }
+
+    @GetMapping("/hello")
+    public String hello(){
+        return "Hello! ";
+    }
 }
